@@ -1,0 +1,32 @@
+css/* Estilos para elementos con clase .titulo */
+.titulo {
+  color: blue;
+  font-size: 24px;
+}
+
+/* Estilos para todos los elementos con clase .texto */
+.texto {
+  color: gray;
+  font-family: Arial;
+}
+
+/* Estilo aplicado solo al elemento con id especial */
+#especial {
+  color: red;
+  font-weight: bold;
+}
+
+/* Estilo único para el header */
+#titulo1 {
+  background-color: rgb(67, 161, 192);
+  padding: 20px;
+}
+.contenedor-inline {
+    width: 80%;          /* ancho del contenedor */
+  max-width: 600px;    /* máximo ancho */
+  margin: 0 auto;      /* centra el contenedor en la página */
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center; 
+}
