@@ -1,33 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>FestiCine 2025 - La Paz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: orange;
+        }
+        
+        .limited {
+            background: orange;
+            color: black;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .main-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .text-content {
+            flex: 1;
+        }
+        
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            color: yellow;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .details {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        .prices {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .extra-info {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: orange;
+        }
+        
+        .reserve-btn {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .screen {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            background-image: url('img/1759168636.png');
+            background-size: cover;
+            background-position: center;
+            border: 8px solid orange;
+            border-radius: 10px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+        .screen-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+        
+        .social {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: #444;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .title {
+                font-size: 36px;
+            }
+            
+            .subtitle {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>PRUEBAS</h1>
-    </header>
-    <article>
-        <div id="titulo1">
-            <h1 class="titulo">Bienvenidos</h1>
+    <div class="container">
+        <div class="header">
+            <div class="logo">FESTI CINE<br>GRATUITO LA PAZ</div>
+            <div class="limited">¡CUPOS LIMITADOS!</div>
         </div>
-
-        <div class="contenido">
-            <p class="texto">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero exercitationem magnam aspernatur sapiente aperiam, modi molestiae suscipit quae quas doloremque aliquid neque dolorum? Voluptatem ut itaque libero, voluptatibus consequatur voluptas!
-            </p>
-            <p class="texto" id="especial">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium inventore eius molestias repellendus eaque aliquam, dolorum distinctio esse architecto quasi iste et magnam. Asperiores deserunt corporis delectus architecto optio!
-            </p>
+        
+        <div class="main-content">
+            <div class="text-content">
+                <h1 class="title">¡EL CINE VUELVE A LA PAZ!</h1>
+                <h2 class="subtitle">GRATUITO >> DEL 5 AL 9 DE OCTUBRE</h2>
+                <p class="details">Más de 30 proyecciones, desde las 18:00 hasta las 22:00 horas. Solo necesitas reservar tu espacio.</p>
+                
+                <div class="prices">
+                    <h3>Precios:</h3>
+                    <ul>
+                        <li><strong>Entrada General:</strong> Bs. 50</li>
+                        <li><strong>Entrada Estudiante / Niño:</strong> Bs. 25</li>
+                        <li><strong>Entrada VIP:</strong> Bs. 120</li>
+                    </ul>
+                </div>
+                
+                <div class="extra-info">
+                    <h3>Extras Disponibles:</h3>
+                    <ul>
+                        <li>🍽️ **Cena Gourmet + Cine:** Bs. 150</li>
+                        <li>🎶 **Cine + Concierto + After Party:** Bs. 200</li>
+                        <li>🎥 **Talleres de Cine y Masterclasses:** Bs. 70</li>
+                        <li>🍿 **Combo Snack Premium:** Bs. 35</li>
+                    </ul>
+                </div>
+                
+                <button class="reserve-btn">
+                    ▶ RESERVA TU ENTRADA GRATUITA
+                </button>
+            </div>
+            
+            <div class="image-content">
+                <div class="screen">
+                    <div class="screen-title">El Eco de las Montañas</div>
+                    <div>Tu película, tu experiencia</div>
+                </div>
+            </div>
         </div>
-        <div class="contenedor-inline">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Iridium-4_Mission_%2825557986177%29.jpg/1200px-Iridium-4_Mission_%2825557986177%29.jpg" alt="Imagen 1">
-            <img src="https://foodandsens.com/wp-content/uploads/2024/03/Screenshot_20240315_151510_Instagram-800x533.jpg" alt="Imagen 2">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtFjIJVSuiET660lfjQlVi1FsX1YmEPjY7Pw&s" alt="Imagen 3">
+        
+        <div class="footer">
+            <div class="social">
+                <div class="social-icon">f</div>
+                <div class="social-icon">i</div>
+                <div class="social-icon">t</div>
+            </div>
+            <div>© 2025 FestiCine La Paz. Todos los derechos reservados.</div>
         </div>
-    </article>
+    </div>
 </body>
 </html>
